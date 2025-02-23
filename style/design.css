@@ -1,0 +1,288 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    /* background: url("image/ig.webp")no-repeat center center fixed;
+    background-size: cover; */
+    background: linear-gradient(135deg, #1E3A8A, #9333EA);
+    /* Remplacer par une couleur ou image */
+    color: white;
+    /* Pour contraster avec un fond sombre */
+    /* background: linear-gradient(135deg, #1E3A8A, #9333EA); */
+    /* background: linear-gradient(180deg, #0F2027, #2C5364); */
+
+    /* background-color: #41404052; */
+}
+
+/* .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+nav,
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Logo et Navigation */
+.logo {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    animation: glow 1.5s infinite alternate;
+}
+
+.logo span {
+    color: #00bcd4;
+    /* Couleur d'accentuation */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.5s;
+}
+
+.navbar a:hover,
+.navbar .active {
+    color: #00bcd4;
+
+}
+
+/* .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #00bcd4;
+} */
+
+/* Bouton */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: #00bcd4;
+    transform: scale(1.05);
+}
+
+/* Image de présentation */
+.image-container .cercle {
+    width: 200px;
+    height: 200px;
+    background: #00bcd4;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.text {
+    max-width: 50%;
+}
+
+.text h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-out, slideIn 3s ease-in-out;
+    /* Animation pour le titre */
+}
+
+.text h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+    color: #95bfc5;
+    /* Couleur d'accentuation */
+}
+
+.changes-text {
+    display: inline-block;
+    /* Garde le texte dans une seule ligne */
+    padding: 5px 10px;
+    background: rgba(240, 234, 222, 0.1);
+    /* Arrière-plan léger */
+    border: 2px solid #00bcd4;
+    /* Bordure orange pour encadrer l'animation */
+    border-radius: 5px;
+    /* Coins arrondis */
+    min-width: 300px;
+    /* Largeur minimale pour éviter les sauts visuels */
+    text-align: center;
+    /* Centrer le texte */
+    color: #f0f3f3;
+    font-weight: bold;
+    white-space: nowrap;
+    /* Empêche le retour à la ligne */
+    transition: opacity 0.5s ease-in-out;
+    /* Transition fluide de l'opacité */
+}
+
+/* Animation des changements de texte */
+@keyframes fade-in-out {
+
+    0%,
+    100% {
+        opacity: 0;
+        /* Commence et finit avec une opacité nulle */
+    }
+
+    20%,
+    80% {
+        opacity: 1;
+        /* Texte visible pendant le milieu de l'animation */
+    }
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px 20px 20px 20px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.grid-item p {
+    color: #555;
+}
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Media Queries pour rendre le site responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .text h1 {
+        font-size: 2.5em;
+    }
+
+    .text h2 {
+        font-size: 1.5em;
+    }
+
+    .image-container .cercle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 2em;
+    }
+
+    .text h2 {
+        font-size: 1.2em;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
