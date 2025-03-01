@@ -2,106 +2,20 @@
 <html lang="fr">
 
 <head>
+    <link rel="stylesheet" href="style.css">
+    <title>experiences - kone</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expériences Professionnelles</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #ff8c00;
-        }
+    <script src="data.js"></script>
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #333;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
-        }
 
-        h1 {
-            text-align: center;
-            color: #ff8c00;
-        }
 
-        .experience {
-            border-bottom: 1px solid #ff8c00;
-            padding: 10px 0;
-        }
-
-        .experience:last-child {
-            border-bottom: none;
-        }
-
-        .poste {
-            font-weight: bold;
-            color: #f7b34d;
-        }
-
-        .entreprise {
-            font-style: italic;
-            color: #ffcc80;
-        }
-
-        .date {
-            color: #a5815d;
-        }
-
-        nav {
-            background: #1a1a1a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ff8c00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        .navbar ul li a {
-            color: #ffcc80;
-            text-decoration: none;
-        }
-
-        .navbar ul li a.active {
-            color: #ff8c00;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #1a1a1a;
-            color: #ff8c0083;
-            margin-top: 20px;
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-        }
-    </style>
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav>
+        <a href="index.html" class="logo">Port<span>folio</span></a>
         <div class="navbar">
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
@@ -111,60 +25,42 @@
         </div>
     </nav>
 
+    <!-- Conteneur principal des projets -->
     <div class="container">
-        <h1>Expériences Professionnelles</h1>
+        <h1>Éxperiences Professionnelles</h1>
 
-        <div class="experience">
-            <div class="poste">Opérateur de production</div>
-            <div class="entreprise">Elivia Villers-Bocage</div>
-            <div class="date">Actuellement</div>
-        </div>
+        <!-- Section Projets de Licence 1 -->
+        <section class="projects-section" id="licence1-section">
+            <h2>Opérateur de production</h2>
+            <div class="project-grid" id="licence1-projects">
+                <!-- Les projets seront insérés ici dynamiquement par JavaScript -->
+            </div>
+        </section>
 
 
-        <div class="experience">
-            <div class="poste">Opérateur de production</div>
-            <div class="entreprise">Elivia Villers-Bocage</div>
-            <div class="date">07/2023 - 18/08/2023</div>
-        </div>
+        <!-- Section Projet -->
+        <section class="projects-section" id="but1-section">
+            <h2>Agent de service</h2>
+            <div class="project-grid" id="but1-projects">
+                <!-- Les projets seront insérés ici dynamiquement par JavaScript -->
+            </div>
+        </section>
 
-        <div class="experience">
-            <div class="poste">Agent de Production (Panini, tacos, plat chaud)</div>
-            <div class="entreprise">DeliceCook Mondeville 14120</div>
-            <div class="date">31/06 – 27/08/2021</div>
-        </div>
-
-        <div class="experience">
-            <div class="poste">Opérateur de production (Steak haché, samedi)</div>
-            <div class="entreprise">Elivia Villers-Bocage</div>
-            <div class="date">03/2021 - 04/2021</div>
-        </div>
-
-        <div class="experience">
-            <div class="poste">Opérateur de nettoyage ligne production</div>
-            <div class="entreprise">Elivia Villers-Bocage</div>
-            <div class="date">mi-12/2020 - début-01/2021</div>
-        </div>
-
-        <div class="experience">
-            <div class="poste">Opérateur de production</div>
-            <div class="entreprise">Elivia Villers-Bocage</div>
-            <div class="date">08/2020 – fin-08/2020</div>
-        </div>
-
-        <div class="experience">
-            <div class="poste">Employé libre-service</div>
-            <div class="entreprise">Monoprix Caen</div>
-            <div class="date">06/2020 - 07/2020</div>
-        </div>
+        <!-- <section class="projects-section" id="bac-section">
+            <h2>Projet de Baccalauréat</h2>
+            <div class="project-grid" id="bac-projects">
+               
+            </div>
+        </section> -->
     </div>
 
     <footer>
         <p>© 2024 - KONE Saybou - Tous droits réservés</p>
 
     </footer>
+    <script src="insertProject.js"></script>
+    <script src="project.js"></script>
 
 </body>
-
-
 
 </html>
