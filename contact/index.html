@@ -4,84 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Kone Saybou</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #ff8c00;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: #333;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
-        }
-
-        h1 {
-            color: #ff8c00;
-        }
-
-        .contact-info {
-            margin: 20px 0;
-            font-size: 18px;
-        }
-
-        .contact-info a {
-            color: #ffcc80;
-            text-decoration: none;
-        }
-
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background: #1a1a1a;
-            color: #ff8c00;
-        }
-
-
-        nav {
-            background: #1a1a1a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #ff8c00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .navbar ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        .navbar ul li a {
-            color: #ffcc80;
-            text-decoration: none;
-        }
-
-        .navbar ul li a.active {
-            color: #ff8c00;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styleContact.css">
+    <title>Contact - KONE Saybou</title>
 </head>
 
 <body>
+
     <nav>
+        <a href="index.html" class="logo">Port<span>folio</span></a>
         <div class="navbar">
             <ul>
                 <li><a href="../index.html">Accueil</a></li>
@@ -92,21 +22,67 @@
     </nav>
 
     <div class="container">
-        <h1>Contact</h1>
+        <h1>Contactez-moi</h1>
+
+        <!-- Informations de contact avec images -->
         <div class="contact-info">
-            <p><strong>Email :</strong> <a href="mailto:konesaybou67@gmail.com">konesaybou67@gmail.com</a></p>
-            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/saybou-kone-aa6047167"
-                    target="_blank">saybou-kone-aa6047167</a></p>
-            <p><strong>Facebook :</strong> <a href="https://www.facebook.com/saybou.kone.1"
-                    target="_blank">saybou.kone.1</a></p>
-            <p><strong>Téléphone :</strong> <a href="tel:+33758855650">+33 7 58 85 56 50</a></p>
-            <p><strong>Github :</strong> <a href="https://github.com/konesaybou" target="_blank">konesaybou</a></p>
+            <h2>Mes coordonnées</h2>
+
+
+            <p><strong>Email:</strong>
+                <a href="mailto:konesaybou67@gmail.com.com">
+                    <img src="../images/mail.webp" alt="Boîte Email" width="50" height="50">konesaybou67@gmail.com
+                </a>
+            </p>
+
+
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/saybou-kone-aa6047167" target="_blank">
+                    <img src="../images/linkedin.jpeg" alt="LinkedIn" width="50" height="50">saybou-kone-aa6047167
+                </a>
+            </p>
+
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/konesaybou" target="_blank">
+                    <img src="../images/gitlogo.jpeg" alt="GitHub" width="50" height="50">konesaybou
+                </a>
+            </p>
+
+            <p><strong>Téléphone:</strong> <a href="tel:+33758855650">+33 7 58 85 56 50</a></p>
+
+            <p><strong>Email:</strong>
+                <a href="https://www.facebook.com/saybou.kone.1">
+                    <img src="../images/facebook.png" alt="facebook" width="50" height="50">saybou.kone.1
+                </a>
+            </p>
+
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="form-container">
+            <h2>Envoyer un message</h2>
+            <form id="contactForm" action="https://formspree.io/f/xldrpbak" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
         </div>
     </div>
+
     <footer>
-        <p>© 2024 - KONE Saybou - Tous droits réservés</p>
+        <p>© 2024 - KONE Saybou - tous droits réservés</p>
 
     </footer>
+
+    <!-- JavaScript -->
+    <script src="public/js/animationContact.js"></script>
 </body>
 
 </html>
