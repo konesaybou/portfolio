@@ -1,17 +1,17 @@
 // Effet de zoom sur les projets (optimisé avec requestAnimationFrame)
 function initZoomEffects() {
-    const projects = document.querySelectorAll('.project-item'); // Sélectionne tous les éléments de projet
+    const projects = document.querySelectorAll('.project-item');
     if (projects.length === 0) {
         console.error('Aucun projet trouvé dans le DOM.');
     } else {
         projects.forEach(project => {
-            // Écoute l'événement "mouseover" pour zoomer sur le projet
+
             project.addEventListener('mouseover', () => {
-                console.log(`Survol sur le projet : ${project.id}`); // Test du survol
+                console.log(`Survol sur le projet : ${project.id}`);
                 try {
                     requestAnimationFrame(() => {
-                        project.style.transform = 'scale(1.05)'; // Applique un agrandissement au survol
-                        project.style.transition = 'transform 0.3s ease'; // Ajoute une transition fluide
+                        project.style.transform = 'scale(1.05)';
+                        project.style.transition = 'transform 0.3s ease';
                     });
                 } catch (error) {
                     console.error(`Erreur lors de l'animation de zoom pour le projet ${project.id}: `, error);
@@ -20,10 +20,10 @@ function initZoomEffects() {
 
             // Écoute l'événement "mouseout" pour restaurer la taille normale du projet
             project.addEventListener('mouseout', () => {
-                console.log(`Fin du survol du projet : ${project.id}`); // Test de la fin du survol
+                console.log(`Fin du survol du projet : ${project.id}`);
                 try {
                     requestAnimationFrame(() => {
-                        project.style.transform = 'scale(1)'; // Restaure la taille normale du projet
+                        project.style.transform = 'scale(1)';
                     });
                 } catch (error) {
                     console.error(`Erreur lors de la restauration du zoom pour le projet ${project.id}: `, error);
@@ -35,25 +35,24 @@ function initZoomEffects() {
 
 // Gestion de l'affichage des détails des projets après le chargement du DOM
 document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.details-button'); // Sélectionne tous les boutons "Voir les détails"
+    const buttons = document.querySelectorAll('.details-button');
     if (buttons.length === 0) {
         console.error('Aucun bouton "Voir les détails" trouvé dans le DOM.');
     } else {
         buttons.forEach(button => {
             button.addEventListener('click', function () {
-                console.log(`Bouton cliqué pour le projet : ${this.parentNode.id}`); // Affiche l'ID du projet dont le bouton est cliqué
+                console.log(`Bouton cliqué pour le projet : ${this.parentNode.id}`);
 
-                const details = this.nextElementSibling; // Récupère le div qui suit immédiatement le bouton
-                // Vérifie si les détails sont déjà visibles ou cachés
+                const details = this.nextElementSibling;
                 try {
                     if (details.style.display === 'none' || details.style.display === '') {
-                        details.style.display = 'block'; // Affiche les détails
-                        this.textContent = 'Masquer les détails'; // Change le texte du bouton
-                        this.setAttribute('aria-expanded', 'true'); // Met à jour l'attribut ARIA pour signifier que les détails sont affichés
+                        details.style.display = 'block';
+                        this.textContent = 'Masquer les détails';
+                        this.setAttribute('aria-expanded', 'true');
                     } else {
-                        details.style.display = 'none'; // Masque les détails
-                        this.textContent = 'Voir les détails'; // Change le texte du bouton
-                        this.setAttribute('aria-expanded', 'false'); // Met à jour l'attribut ARIA pour signifier que les détails sont masqués
+                        details.style.display = 'none';
+                        this.textContent = 'Voir les détails';
+                        this.setAttribute('aria-expanded', 'false');
                     }
                 } catch (error) {
                     console.error(`Erreur lors de la gestion des détails pour le projet ${this.parentNode.id}: `, error);

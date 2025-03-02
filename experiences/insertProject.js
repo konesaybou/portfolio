@@ -132,11 +132,7 @@ function insertProjects() {
             }
 
 
-            // if (project.pdf) {
-            //     const pdfLink = document.createElement('p');
-            //     pdfLink.innerHTML = `<strong>Documentation PDF :</strong> <a href="${project.pdf}" target="_blank">Télécharger ou consulter</a>`;
-            //     projectDetails.appendChild(pdfLink);
-            // }
+
 
 
             section.appendChild(projectItem);

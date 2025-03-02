@@ -38,16 +38,16 @@
         /* Style pour la navigation */
         nav {
             background: #bb6803;
-            /* Couleur de fond sombre et élégante */
+
             padding: 15px 0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* Ombre portée */
+
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
             animation: slideInDown 1s ease-out;
-            /* Animation de glissement pour la navigation */
+
         }
 
         nav .logo {
@@ -57,7 +57,7 @@
             text-decoration: none;
             padding-left: 20px;
             animation: fadeIn 2s ease-in;
-            /* Animation d'apparition pour le logo */
+
         }
 
         nav .navbar ul {
@@ -67,13 +67,13 @@
             display: flex;
             justify-content: center;
             animation: fadeIn 1.5s ease-in;
-            /* Animation d'apparition pour les liens de la navbar */
+
         }
 
         nav .navbar ul li {
             margin: 0 20px;
             animation: bounceIn 1.5s ease-in-out;
-            /* Animation de rebond pour les éléments de la navbar */
+
         }
 
         nav .navbar ul li a {
@@ -89,23 +89,23 @@
         nav .navbar ul li a:hover,
         nav .navbar ul li a.active {
             background: #f3ad58;
-            /* Couleur de survol avec effet de fond */
+
             color: #ffffff;
         }
 
-        /* Style pour le conteneur des projets */
+
         .container {
             max-width: 1200px;
             margin: auto;
             padding: 30px;
             background: rgba(255, 255, 255, 0.9);
-            /* Fond blanc semi-transparent pour le contraste */
+
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
             margin-top: 80px;
-            /* Espace pour la barre de navigation fixe */
+
             animation: fadeInUp 2s ease-out;
-            /* Animation de montée pour le conteneur */
+
         }
 
         .container h1 {
@@ -114,7 +114,7 @@
             color: #333333;
             text-align: center;
             animation: zoomIn 1.5s ease-out;
-            /* Animation de zoom pour le titre */
+
         }
 
         /* Section des projets */
@@ -146,7 +146,7 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             padding: 20px;
             animation: fadeInUp 1.5s ease-out;
-            /* Animation de montée pour chaque projet */
+
         }
 
         .project-item h3 {
@@ -155,7 +155,7 @@
             color: #ff6f61;
             text-align: center;
             animation: slideInLeft 1.5s ease-out;
-            /* Animation de glissement depuis la gauche pour les titres de projet */
+
         }
 
         .project-item p {
@@ -163,7 +163,7 @@
             margin-bottom: 15px;
             text-align: left;
             animation: slideInRight 1.5s ease-out;
-            /* Animation de glissement depuis la droite pour les paragraphes */
+
         }
 
         .project-item ul {
@@ -174,7 +174,7 @@
         .project-item ul li {
             font-size: 18px;
             animation: fadeIn 1.5s ease-in;
-            /* Animation d'apparition pour les éléments de la liste */
+
         }
 
         /* Style pour les images */
@@ -182,69 +182,53 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            /* Centre le texte sous l'image */
+
             align-items: center;
-            /* Centre les éléments dans le wrapper */
+
             margin: 15px 0;
         }
 
         .image-wrapper img {
             max-width: 80%;
-            /* Limite la largeur des images à 80% du conteneur */
+
             height: auto;
-            /* Conserve le ratio */
+
             border-radius: 12px;
-            /* Arrondit les bords des images */
+
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            /* Ombre pour les images */
+
         }
 
         .image-wrapper p {
             font-size: 16px;
-            /* Taille du texte sous les images */
             text-align: center;
-            /* Centre le texte sous les images */
             margin-top: 10px;
-            /* Espace entre l'image et le texte */
             color: #333;
-            /* Couleur du texte */
         }
 
-        /* Style pour les vidéos */
         .video-wrapper {
             display: flex;
             justify-content: center;
-            /* Centre les vidéos */
             margin: 15px 0;
-            /* Marge autour des vidéos */
         }
 
         video {
             max-width: 30%;
-            /* Limite la largeur des vidéos à 80% du conteneur */
             height: auto;
-            /* Conserve le ratio des vidéos */
             border-radius: 8px;
-            /* Arrondit les bords des vidéos */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            /* Ombre pour les vidéos */
         }
 
         /* Style pour les liens des projets */
         .project-item a {
             display: inline-block;
-            /* Pour appliquer un style de bloc avec padding et border */
             color: #ff8c00;
             text-decoration: none;
             font-weight: bold;
             padding: 10px 15px;
-            /* Ajoute du padding pour rendre le lien plus visible */
             border: 2px solid #ff8c00;
-            /* Encadre le lien */
             border-radius: 8px;
-            /* Arrondit les bords */
             transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-            /* Effet de transition pour un rendu plus fluide */
         }
 
         .project-item a:hover {
@@ -253,7 +237,6 @@
             border-color: #ff8c00;
         }
 
-        /* Style pour le footer */
         footer {
             text-align: center;
             padding: 20px;
