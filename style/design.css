@@ -101,7 +101,7 @@ nav {
 } */
 
 /* Bouton */
-.btn {
+/* .btn {
     display: inline-block;
     padding: 15px 30px;
     background: #00bcd4;
@@ -115,7 +115,7 @@ nav {
 .btn:hover {
     background: #00bcd4;
     transform: scale(1.05);
-}
+} */
 
 /* Image de présentation */
 .image-container .cercle {
@@ -259,9 +259,9 @@ nav {
         height: 150px;
     }
 
-    .btn {
+    /* .btn {
         padding: 10px 20px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
